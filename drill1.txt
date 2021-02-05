@@ -1,0 +1,63 @@
+1. Directory structure
+   
+ cd Desktop
+ mkdir hello
+ cd hello
+ mkdir five one
+ cd five
+ mkdir -p six/seven
+ cd six
+ touch c.txt
+ cd seven
+ touch error.log
+ cd
+ cd hello
+ cd one
+ mkdir -p two/three/four
+ touch a.txt b.txt
+ cd two
+ touch d.txt
+ cd three
+ touch e.txt
+ cd four
+ touch access.log
+ 
+ 
+2. Delete all the files having the .log extension
+
+   rm Desktop/hello/five/six/seven/error.log hello/one/two/three/four/access.log
+   
+ 
+3.Add the following content to a.txt
+ 
+  nano Desktop/hello/one/a.txt
+  press enter
+  copy & paste{
+  Unix is a family of multitasking, multiuser computer operating 
+  systems that derive from the original AT&T Unix, development 
+  starting in the 1970s at the Bell Labs research center by Ken 
+  Thompson, Dennis Ritchie, and others.
+  }
+  press ^x
+  press y
+  press ENTER
+  
+ 
+4. Delete the directory named five.
+  
+   rm -r Desktop/hello/five
+   
+   
+5.Rename the one directory to uno.
+
+   mv one uno
+   
+6.Move a.txt to the two directory.
+
+   mv Desktop/hello/uno/a.txt Desktop/hello/uno/two/a.txt
+
+    
+    
+   
+
+
